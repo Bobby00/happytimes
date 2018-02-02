@@ -7044,7 +7044,7 @@ span + .typed-text.h1 {
 .imagebg:not(.image--light) select,
 .bg--dark .input-select:after,
 .imagebg:not(.image--light) .input-select:after {
-  color: #666666;
+  color: green;
 }
 .bg--dark label,
 .imagebg:not(.image--light) label {
@@ -7268,8 +7268,8 @@ label {
   -moz-transition: 0.3s ease;
 }
 .input-checkbox input:checked + label {
-  border-color: #4a90e2;
-  background: #4a90e2;
+  border-color: green;
+  background: green;
 }
 .input-checkbox input:checked + label:after {
   content: 'L';

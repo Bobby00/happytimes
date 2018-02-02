@@ -41,7 +41,7 @@
                         <ul class="menu-vertical">
                           <li class="h4"> <a style="color:black; font-weight:bolder;" class="inner-link" href="#">Home</a> </li>
                           <li class="h4"> <a style="color:black; font-weight:bolder;" class="inner-link" href="#products">Our Products</a> </li>
-                          <li class="h4"> <a style="color:black; font-weight:bolder;" class="inner-link" href="#subscribe">Subscribe Here</a> </li>
+                          <li class="h4"> <a onclick="myFunction()" style="color:black; font-weight:bolder;" class="inner-link" href="#subscribe">Subscribe Here</a> </li>
                             <li class="h4"> <a style="color:black; font-weight:bolder;" class="inner-link" href="#about-us">About Us</a> </li>
                         </ul>
                     </div>
@@ -56,6 +56,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="main-container">
             <section class="cover height-90 imagebg text-center slider slider--ken-burns" data-arrows="true" data-paging="true">
               <br><br><br>
@@ -294,6 +296,33 @@
                 </div>
             </section>
 <hr class="special">
+
+<section class="text-center imagebg" style="display:none;" id="subscribe" data-overlay="3">
+  <br><br><br>
+                <div class="background-image-holder"> <img alt="background" src="imgs/science_weed_story.gif"> </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <div class="boxed boxed--lg bg--dark subscribe-form-1">
+                                <h3>Get our latest content directly to your inbox</h3>
+                                <h5>Join over 1,000 satisfied high customers :-)</h5>
+                                <div class="col-sm-8 col-sm-offset-2 text-left">
+                                    <form action="//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=f300c9cce8" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your name and email address and agree to the terms.">
+                                      <input class="validate-required" type="text" name="NAME" placeholder="Your Name or Username">
+                                      <input class="validate-required validate-email" type="email" name="EMAIL" placeholder="Email Address">
+                                      <input class="validate-required" type="number" name="phoneno" placeholder="Your Phone Number">
+                                      <input class="validate-required" type="checkbox" name="group[13737][1]">
+                                      <span>I have read and agree to the <a href="#">terms and conditions</a></span>
+                                      <button type="submit" id="button-green" class="btn btn--primary type--uppercase">Subscribe To Our Newsletter</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="switchable side-a" id="about-us">
                 <div class="container">
                   <br><br>
@@ -335,6 +364,20 @@
                 </div>
             </footer>
         </div>
+
+        <script>
+                    function myFunction(){
+                        var x =
+                    document.getElementById('subscribe');
+                    if (x.style.display === 'none')
+                    {
+                        x.style.display = 'block';
+                    } else {
+                       x.style.display = "none";
+                    }
+                }
+                </script>
+
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/flickity.min.js"></script>
         <script src="js/parallax.js"></script>
